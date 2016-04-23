@@ -15,11 +15,11 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.test.context.web.WebAppConfiguration;
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@SpringApplicationConfiguration(classes = SpringCloudConfigServerApplication.class)
+@SpringApplicationConfiguration(classes = Application.class)
 @WebAppConfiguration
 @IntegrationTest("server.port=0")
 @DirtiesContext
-public class SpringCloudConfigServerApplicationTests {
+public class ApplicationTests {
 
 	@Value("${local.server.port}")
 	private int port;

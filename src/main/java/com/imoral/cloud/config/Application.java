@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 @SpringBootApplication
 @RestController
 @EnableConfigServer
-public class SpringCloudConfigServerApplication {
+public class Application {
 
 	@Value("${spring.application.name}")
 	String name = "Application";
@@ -24,6 +24,6 @@ public class SpringCloudConfigServerApplication {
 	}
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringCloudConfigServerApplication.class, args);
+		SpringApplication.run(Application.class, args);
 	}
 }
